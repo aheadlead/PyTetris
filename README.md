@@ -1,6 +1,8 @@
 # PyTetris
 为了学习 MVC 模式而胡乱写的一个俄罗斯方块。
 
+![demo](demo.gif)
+
 # 依赖
 pygame 
 
