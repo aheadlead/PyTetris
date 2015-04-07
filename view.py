@@ -64,7 +64,7 @@ class PyTerisViewTerminal(PyTerisViewBase):
                   }
         try:
             self.event_callback(keymap[key_value])
-        except KeyError, e:
+        except KeyError:
             # TODO for debug
             stderr.write("view: term: pressed key not found\n")
 
@@ -109,7 +109,7 @@ class PyTerisViewTerminal(PyTerisViewBase):
             return best_color_name
             # 算法完毕
 
-        t = Terminal()  # 注意后面有一句用 exec 执行的语句包含了实例名称 t ，改名字的时候注意。
+        t = Terminal()
 
         self.clear_screen()
 
